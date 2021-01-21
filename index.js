@@ -3,7 +3,7 @@ const cors = require('cors');
 const fs = require('fs');
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
-const uri = "mongodb+srv://root:root@cluster0.4ev6p.mongodb.net/stationf_db?retryWrites=true&w=majority";
+const uri = process.env.DATABASE_URI;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 let db;
 client.connect(err => {
