@@ -1,0 +1,64 @@
+{
+  "bookings": [
+    {
+      "room_name": "Salle #1",
+      "start_date": "2021-01-21T15:00:00.000Z",
+      "end_date": "2021-01-21T16:00:00.000Z"
+    },
+    {
+      "room_name": "Salle de ouf",
+      "start_date": "2021-01-22T16:06:00.000Z",
+      "end_date": "2021-01-23T08:12:00.000Z"
+    },
+    {
+      "room_name": "Salle nulle",
+      "start_date": "2021-01-22T16:06:00.000Z",
+      "end_date": "2021-01-23T08:12:00.000Z"
+    },
+    {
+      "room_name": "Salle #1",
+      "start_date": "2021-01-22T16:06:00.000Z",
+      "end_date": "2021-01-23T08:12:00.000Z"
+    },
+    {
+      "room_name": "Salle nulle",
+      "start_date": "2021-01-21T00:10:00.000Z",
+      "end_date": "2021-01-21T01:40:00.000Z"
+    },
+    {
+      "room_name": "Salle #2",
+      "start_date": "2021-01-21T00:20:00.000Z",
+      "end_date": "2021-01-21T00:50:00.000Z"
+    },
+    {
+      "room_name": "Salle de ouf",
+      "start_date": "2021-01-21T00:20:00.000Z",
+      "end_date": "2021-01-21T00:50:00.000Z"
+    },
+    {
+      "room_name": "Salle #1",
+      "start_date": "2021-01-21T00:20:00.000Z",
+      "end_date": "2021-01-21T01:50:00.000Z"
+    },
+    {
+      "room_name": "Salle Okjsdkso",
+      "start_date": "2021-01-21T00:20:00.000Z",
+      "end_date": "2021-01-21T01:50:00.000Z"
+    },
+    {
+      "room_name": "Salle Okjsdkso",
+      "start_date": "2021-01-23T00:20:00.000Z",
+      "end_date": "2021-01-23T01:50:00.000Z"
+    },
+    {
+      "room_name": "Salle #2",
+      "start_date": "2021-01-23T00:20:00.000Z",
+      "end_date": "2021-01-23T01:50:00.000Z"
+    },
+    {
+      "room_name": "Salle #1",
+      "start_date": "2021-01-24T00:20:00.000Z",
+      "end_date": "2021-01-24T01:50:00.000Z"
+    }
+  ]
+}
