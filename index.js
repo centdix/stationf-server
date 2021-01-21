@@ -11,10 +11,14 @@ client.connect(err => {
 });
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.use(cors());
 app.use(express.json());
+
+app.get('/', (req, res) => {
+	res.send("hello world");
+})
 
 app.get('/rooms', (req, res) => {
 	fs.readFile('rooms.json', (err, data) => {
