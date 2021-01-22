@@ -16,10 +16,6 @@ const port = process.env.PORT || 8000;
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-	res.send("hello world");
-})
-
 app.get('/rooms', (req, res) => {
 	fs.readFile('rooms.json', (err, data) => {
 		if (err) throw err;
@@ -32,7 +28,7 @@ app.get('/bookings', (req, res) => {
 	// fs.readFile('bookings.json', (err, data) => {
 	// 	if (err) throw err;
 	// 	let bookings = JSON.parse(data);
-	// 	res.json(bookings);
+	// 	res.json(bookings.bookings);
 	// });
 	db.collection("bookings").find().toArray((err, docs) => {
 		if (err) throw err;
@@ -48,7 +44,7 @@ app.post('/book', (req, res) => {
 	// old_data.bookings.push(new_booking);
 	// bookings = JSON.stringify(old_data, null, 2);
 	// fs.writeFileSync('bookings.json', bookings);
-	// res.json(JSON.parse(bookings));
+	// res.json(JSON.parse(bookings.bookings));
 	db.collection("bookings").insertOne(req.body, (err, result) => {
 		if (err) throw err;
 		res.json(result);
@@ -63,5 +59,5 @@ app.delete('/bookings/:id', async (req, res) => {
 })
 
 app.listen(port, () => {
-	console.log(`Example app listening on port ${port}!`)
+	console.log(`app listening on port ${port}!`)
 });
