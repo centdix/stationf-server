@@ -1,3 +1,3 @@
 # stationf-server
 
-__how_to__: ``node index.js``
+__how to__: ``node index.js``
